@@ -90,7 +90,7 @@ const AllProduct = (props) => {
             </tr>
           </thead>
           <tbody>
-            {products && products.length > 0 ? (
+            {products && products?.length > 0 ? (
               products.map((item, key) => {
                 return (
                   <ProductTable
@@ -125,6 +125,7 @@ const AllProduct = (props) => {
 
 /* Single Product Component */
 const ProductTable = ({ product, deleteProduct, editProduct }) => {
+  console.log(product)
   return (
     <Fragment>
       <tr>
@@ -155,7 +156,7 @@ const ProductTable = ({ product, deleteProduct, editProduct }) => {
           )}
         </td>
         <td className="p-2 text-center">{product.pQuantity}</td>
-        <td className="p-2 text-center">{product.pCategory}</td>
+        <td className="p-2 text-center">{JSON.stringify(product.pCategory)}</td>
         <td className="p-2 text-center">{product.pOffer}</td>
         <td className="p-2 text-center">
           {moment(product.createdAt).format("lll")}
