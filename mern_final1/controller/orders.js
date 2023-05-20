@@ -100,17 +100,6 @@ class Order {
   }
 }
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  console.log(type);
-};
-
-return (
-  <form onSubmit={handleSubmit}>
-    <input placeholder="What's your mind?" />
-    <button>Clcik Me!</button>
-  </form>
-);
 
 const ordersController = new Order();
 module.exports = ordersController;
