@@ -8,3 +8,17 @@
   flex-direction: column;
   transition: all 1s;
 }
+
+.fixed {
+  background-color: orangered;
+}
+
+.hidden {
+  color: white;
+  font-size: 22px;
+}
+
+.hidden:hover {
+  color: rebeccapurple;
+  font-size: 35px;
+}
