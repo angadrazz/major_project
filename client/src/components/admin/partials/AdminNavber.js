@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { useHistory } from "react-router-dom";
+import "./style.css";
 
 const AdminNavber = (props) => {
   const history = useHistory();
