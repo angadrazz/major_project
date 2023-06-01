@@ -1,0 +1,9 @@
+
+.sticky {
+        background-color: blue;
+        color: black;
+}
+
+.sticky:hover {
+        color: yellow;
+}
